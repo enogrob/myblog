@@ -1,1 +1,12 @@
-<p>this is the edit page</p>
+<p>This is the edit page</p>
+<%=	form_for @article  do |f| %>
+    <p>
+      <%= f.label :title %>: <%= f.text_field :title %>
+    </p>
+    <p>
+      <%= f.label :body %>: <%= f.text_area :body %>
+    </p>
+    <p>
+      <%= f.submit "Save Article" %>
+    </p>
+<%	end %>

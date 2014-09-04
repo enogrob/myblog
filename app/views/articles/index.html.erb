@@ -1,1 +1,9 @@
 <p>this is the index page</p>
+<% @articles.each do |article| %>
+    <p>
+      <%= link_to article.title, article  %>
+    </p>
+<% end %>
+<p>
+  <%= link_to "Add Article", new_article_path %>
+</p>
