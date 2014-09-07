@@ -9,6 +9,5 @@
 </p>
 <p>
   <%= link_to "Edit", edit_article_path(@article) %>
-  <!--todo :confirm is not working-->
-  <%= link_to "Delete", @article, :confirm => "Are you sure?", :method => :delete %>
+  <%= link_to "Delete", @article, :method => :delete, data: {:confirm => "Are you sure?"} %>
 </p>
